@@ -1,0 +1,13 @@
+!.gitkeep
+
+### macOS
+*.DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# vs code
+.vscode/
