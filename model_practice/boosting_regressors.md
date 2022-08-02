@@ -10,10 +10,10 @@ Follow these steps to set up the repository on your local machine:
 1. Clone the repository if you haven't done so before
    ` git clone git@github.com:ValkyrieIntelligence/vlk-associate-tutorials`
 
-   If you have pulled the repo, pull in the changes from the main branch
+   If you have cloned the repo before, pull in the changes from the main branch
    `git pull origin` 
 
-2. From the project folder checkout your own branch
+2. From the repo checkout your own branch
    `git checkout -b [name]`
 
 3. Create a new conda environment
@@ -38,11 +38,6 @@ Follow these steps to set up the repository on your local machine:
    - `AdaBoostRegressor`
       https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostRegressor.html?highlight=adaboost#sklearn.ensemble.AdaBoostRegressor
 
-   Boosted decision trees (`AdaBoost`, `GradientBoosting` & others)
-   have been shown empirically to outperform `RandomForest` on average
-   ([_Table 4 - R. Caruana et. al._](./readings/compare_ml_algo.pdf)) in terms
-   of predictive power. The runtime for boosting algorithms, as you will
-   experience, is also competitive with random forest.
 
    As a starting point, there are instantiations of the 3 classes of
    algorithms with predetermined hyperparameters. Don't worry about those for now, 
@@ -68,7 +63,13 @@ Follow these steps to set up the repository on your local machine:
     values will constitute the search space. We try each possible combination
     of parameters and find the combination which minimizes error.
 
-    Use `GridSearchCV` for to find the best `RandomForestRegressor`
-    and `GradientBoostRegressor` models respectively.
+    Use `GridSearchCV` to find the best hyperparameters for your model. 
     Remember to specify `n_jobs=-1` in `GridSearchCV` to use all the cores of your
     machine and speed up your search.
+    
+10. Other question to consider when improving your model:
+      * How did your model improve? 
+      * What are the best parameters? 
+      * What are the most import features? 
+      * What other data might you include to improve your performance?
+      * How often should you train your model if used in a production setting? 
