@@ -10,7 +10,7 @@ Follow these steps to set up the repository on your local machine:
 1. Clone the repository if you haven't done so before
    ` git clone git@github.com:ValkyrieIntelligence/vlk-associate-tutorials`
 
-   If you have cloned the repo before, pull in the changes from the main branch
+   If you have cloned the repo before, pull in the changes from the `master` branch
    `git pull origin` 
 
 2. From the repo checkout your own branch
